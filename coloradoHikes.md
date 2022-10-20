@@ -6,7 +6,7 @@
 ***
 
 ### ***SCENIC HIKES***
-Will show hikes with different levels (beginner, intermediate, hard). Details such as (Miles, Location, scenic view if it includes a lake, waterfall or just trees)
+Will show hikes with different levels (beginner, moderate, hard). Details such as (Miles, Location, scenic view if it includes a lake, waterfall or just trees)
 ***
 
 ### ***Getting Started***
@@ -35,7 +35,7 @@ Will show hikes with different levels (beginner, intermediate, hard). Details su
 #### ***Component Hierarchy Diagram***
 ![Image](./images/denverHikesProject.drawio.png)
 
-#### ***ERD Diagram***
+#### ***Entity Relationship Diagram***
 ![Image](./images/denverHikesERD.drawio%20(1).png)
 
 ***Lake Haiyaha Denver, Colorado***
