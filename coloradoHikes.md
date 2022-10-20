@@ -1,4 +1,4 @@
-# Denver Hikes
+# Colorado Hikes
 
 ## Date: 10/19/22
 ### By: Thomalita Burbank
@@ -6,16 +6,17 @@
 ***
 
 ### ***SCENIC HIKES***
-Will show hikes with different levels (beginner, intermediate, hard).
+Will show hikes with different levels (beginner, intermediate, hard). Details such as (Miles, Location, scenic view if it includes a lake, waterfall or just trees)
 ***
 
 ### ***Getting Started***
 * Building charts for front-end and back-end 
-* Research hikes in area, gather details
-     * Levels
-     * Miles
+* Research hikes in different locations, gather details
      * Location
-     
+     * Difficulty
+     * Miles
+     * Image
+     * Details
 
 ***
 
@@ -23,26 +24,26 @@ Will show hikes with different levels (beginner, intermediate, hard).
 * Trello Board - Checklist
     * [Trello Project Link](https://trello.com/b/kScL36IN/denver-hikes)
 * DrawIO Chart
-    * Hierarchy Chart
-    * ERD Chart
+    * Hierarchy Diagram
+    * ERD Diagram
 
 
 
 ***
 ### ***Screenshots***
 
-#### ***Component Hierarchy Chart***
-![Image]()
+#### ***Component Hierarchy Diagram***
+![Image](./images/denverHikesProject.drawio.png)
 
-#### ***ERD Chart***
-![Image](denverHikesProject.png)
+#### ***ERD Diagram***
+![Image](./images/denverHikesERD.drawio%20(1).png)
 
-***Lake Haiyaha***
+***Lake Haiyaha Denver, Colorado***
 ![Image](https://www.foxintheforest.net/wp-content/uploads/2020/05/rob-morton-fecsiuPSJsc-unsplash-1536x1024.jpg)
 
 ### ***Credits***
 ##### Images: [DuckDuckGo Search](http://www.duckduckgo.com)
 
-##### Markdown Guide: [ia.net](https://ia.net/writer/support/general/markdown-guide)
+##### Diagrams: [DrawIO](https://app.diagrams.net/)
 
 ***
