@@ -10,18 +10,20 @@ Will show hikes with different levels (beginner, intermediate, hard).
 ***
 
 ### ***Getting Started***
-* Building charts for front-end, back-end 
-* Research hikes in area
-
+* Building charts for front-end and back-end 
+* Research hikes in area, gather details
+     * Levels
+     * Miles
+     * Location
+     
 
 ***
 
 ### ***Techologies Used***
 * Trello Board - Checklist
     * [Trello Project Link](https://trello.com/b/kScL36IN/denver-hikes)
-* Lucid Chart
+* DrawIO Chart
     * Hierarchy Chart
-* DrawIO
     * ERD Chart
 
 
@@ -33,7 +35,7 @@ Will show hikes with different levels (beginner, intermediate, hard).
 ![Image]()
 
 #### ***ERD Chart***
-![Image](https://app.diagrams.net/denverHikesProject.png)
+![Image](denverHikesProject.png)
 
 ***Lake Haiyaha***
 ![Image](https://www.foxintheforest.net/wp-content/uploads/2020/05/rob-morton-fecsiuPSJsc-unsplash-1536x1024.jpg)
