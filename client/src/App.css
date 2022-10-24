@@ -13,9 +13,11 @@
   color: white;
 }
 
-.nav {
+.navbar {
   background-color: #333;
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+

@@ -1,15 +1,17 @@
-export default function Navbar() {
-    return <nav className="nav">
-        <a href="/" classname="title">
-            Colorado's Hiking Guide
-        </a>
-    <ul>
-        <li>
-            <a href="/locations">Locations</a>
-        </li>
-        <li>
-            <a href="/hikes">Hiking Trails</a>
-        </li>
-    </ul>
-    </nav>
+import { NavLink } from "react-router-dom"
+
+const Nav = () => {
+    return (
+        <nav className="navbar">
+            <h3>Colorado's Hiking Guide</h3>
+            <div>
+                <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/locations">Locations</NavLink></li>
+                <li><NavLink to="/hikes">Hiking Trails</NavLink></li>
+                </ul>
+            </div>
+        </nav>
+    )
 }
+export default Nav
