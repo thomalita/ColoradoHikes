@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
@@ -9,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <header>
-      <Nav>Hikes</Nav>
+      <Navbar/>
       </header>
-      <h1>TITLE</h1>
+      <h1>Welcome to Colorado's Guide to Hiking Trails!</h1>
       <main>
         <Routes>
           {/* <Route path = "/" element = { <Home/> } /> */}
