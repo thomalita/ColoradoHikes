@@ -9,7 +9,6 @@ const Nav = () => {
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/locations">Locations</NavLink></li>
                 <li><NavLink to="/hikes">Hiking Trails</NavLink></li>
-                <li><NavLink to="/form">Add New Hike</NavLink></li>
                 </ul>
             </div>
         </nav>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 const Locations = () => {
@@ -22,10 +23,12 @@ const Locations = () => {
             <div>
                 <h2>Locations</h2>
                 {locations.map((location) =>(
+                    <Link to={`/location/${location._id}`}>
                     <div className="location-card" key={location.id}>
                         <h3>{location.city}</h3>
                         <img src={location.image}></img>
                     </div>
+                    </Link>
                 ))}
             </div>
         </div>
