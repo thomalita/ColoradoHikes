@@ -24,9 +24,10 @@ const Hikes = () => {
                     <div key={hike.id}>
                         <h3>{hike.id}</h3>
                         <img src={hike.image}></img>
-                        <h5>{hike.difficulty}</h5>
-                        <h5>{hike.miles}</h5>
-                        <h5>{hike.details}</h5>
+                        <h3>Location: {hike.location?.city}</h3>
+                        <h5>Difficulty: {hike.difficulty}</h5>
+                        <h5>Miles: {hike.miles}</h5>
+                        <h5>Details: {hike.details}</h5>
                     </div>
                 ))}
             </div>

@@ -28,7 +28,8 @@ const createHike = async (req, res) => {
 
 const getAllHikes = async (req, res) => {
     try {
-        const hikes = await Hike.find()
+        const hikes = await Hike.find().populate('location')
+        
         return res.status(201).json(
             hikes
         );
@@ -36,6 +37,7 @@ const getAllHikes = async (req, res) => {
         return res.status(500).json({ error: error.message })
     }
 }
+
 
 const getAllLocations = async (req, res) => {
     try {
