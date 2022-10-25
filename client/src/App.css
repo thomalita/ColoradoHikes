@@ -21,3 +21,28 @@
   align-items: center;
 }
 
+.locations-grid {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-around;
+}
+
+.locations-grid img {
+  width: 100%;
+  height: 10em;
+  object-fit: center;
+  box-shadow: inset 0 0 1em rgb(0, 0, 0);
+}
+
+.hikes-grid {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-around;
+}
+
+.hikes-grid img {
+  width: 50%;
+  height: 10em;
+  object-fit: center;
+  box-shadow: inset 0 0 1em rgb(0, 0, 0);
+}

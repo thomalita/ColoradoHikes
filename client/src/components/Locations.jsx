@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios'
 
+
 const Locations = () => {
     const [locations, setLocations] = useState([])
     useEffect (() => {
@@ -12,12 +13,16 @@ const Locations = () => {
     }
     getLocations()
     }, [])
+
+
+
+
     return (
-        <div>
+        <div className="locations-grid">
             <div>
                 <h2>Locations</h2>
                 {locations.map((location) =>(
-                    <div key={location.id}>
+                    <div className="location-card" key={location.id}>
                         <h3>{location.city}</h3>
                         <img src={location.image}></img>
                     </div>

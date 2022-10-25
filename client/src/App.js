@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './components/Home'
 import Locations from './components/Locations'
-import Trails from './components/Trails';
+import Hikes from './components/Hikes';
 import './App.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path = "/" element = { <Home/> } />
           <Route path = "/locations" element = { <Locations/> } />
-          <Route path = "/hikes" element = { <Trails/> } />
+          <Route path = "/hikes" element = { <Hikes/> } />
         </Routes>
       </main>
     </div>
