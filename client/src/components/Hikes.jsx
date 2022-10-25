@@ -22,9 +22,8 @@ const Hikes = () => {
             <h2>Trails</h2>
                 {hikes.map((hike) =>(
                     <div key={hike.id}>
-                        <h3>{hike.id}</h3>
-                        <img src={hike.image}></img>
                         <h3>Location: {hike.location?.city}</h3>
+                        <img src={hike.image}></img>
                         <h5>Difficulty: {hike.difficulty}</h5>
                         <h5>Miles: {hike.miles}</h5>
                         <h5>Details: {hike.details}</h5>
