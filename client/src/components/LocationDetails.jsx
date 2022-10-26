@@ -7,13 +7,11 @@ const LocationDetails = ({hikes}) => {
 
   let { id } = useParams()
 
-  const [location, setLocation] = useState()
+  const [location, setLocation] = useState([])
 
   const getLocation = async () => { 
   const response = await axios.get(`http://localhost:3001/locations/${id}/hikes`)
-  const locations = response.data
-  let selectedLocation = response.data
-    setLocation(selectedLocation)
+    setLocation(response.data)
   }
     
   useEffect(() => {
@@ -26,10 +24,10 @@ const LocationDetails = ({hikes}) => {
     //make axios get with ID use Params, setState
   return (
     <div className='location-details'>
-      <h3>Location</h3>
-        {hikes.map((hike) =>(
+      <h3>Details</h3>
+        {location?.map((hike) =>(
           <div key={location.id}>
-            <h3>Location: {hike.location?.city}</h3>
+            <h3>Location: {location?.city}</h3>
             <img src={hike.image}></img>
             <h5>Difficulty: {hike.difficulty}</h5>
             <h5>Miles: {hike.miles}</h5>

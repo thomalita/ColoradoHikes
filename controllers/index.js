@@ -64,8 +64,8 @@ const getLocationById = async ( req, res) => {
 }
 const getHikesByLocation = async ( req, res) => {
     try {
-        const id = req.params.id
-        const hikesByLocation = await Hike.find({ location:id })
+        const hikesByLocation = await Hike.find({ location:req.params.id})
+        console.log(hikesByLocation)
         if (hikesByLocation) {
             return res.status(200).json(hikesByLocation);
         }
