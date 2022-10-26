@@ -10,6 +10,7 @@ const Nav = () => {
                 <li><NavLink to="/locations">Locations</NavLink></li>
                 <li><NavLink to="/hikes">Hiking Trails</NavLink></li>
                 <li><NavLink to="/form/:id">Add Hike</NavLink></li>
+                <li><NavLink to="/hike/:id/updateForm">Update Hike</NavLink></li>
                 </ul>
             </div>
         </nav>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 
 
@@ -27,9 +28,9 @@ const handleDelete = async (id) => {
                         <h5>Miles: {hike.miles}</h5>
                         <h5>Details: {hike.details}</h5>
                         <button onClick={() => handleDelete(hike._id)}>Delete</button>
-                        {/* <Link to={`/hike/${hike._id}/updateForm/`}> */}
-                        {/* <button>Update</button> */}
-                        {/* </Link> */}
+                        <Link to={`/hikes/${hike._id}/updateForm`}>
+                        <button>Update</button>
+                        </Link>
                     </div>
                 ))}
             </div>

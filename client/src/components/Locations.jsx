@@ -15,9 +15,6 @@ const Locations = () => {
     useEffect (() => {
     const getLocations = async () => {
         const response = await axios.get('http://localhost:3001/locations')
-    // const locations = response.data
-
-    console.log(locations)
         setLocations(response.data)
     }
     getLocations()
