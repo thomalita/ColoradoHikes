@@ -37,7 +37,7 @@ function App() {
           <Route path = "/locations/:id" element = { <LocationDetails hikes = {hikes}/> } />
           <Route path = "/hikes" element = { <Hikes hikes = {hikes} getHikes = {getHikes} /> } />
           <Route path ="/form/:id" element={ <HikeForm/>} />
-          <Route path ="/hike/:id/updateForm" element={ <UpdateForm/>}/>
+          <Route path ="/hikes/:id/updateForm" element={ <UpdateForm/>}/>
         </Routes>
       </main>
     </div>

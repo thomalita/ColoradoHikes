@@ -4,7 +4,9 @@ const Home = () => {
   return (
     <div>
         <div className='homepage'>
+            <marquee>
             <h2>Welcome to Colorado's Hiking Guide!</h2>
+            </marquee>
             <img src='https://cdn-assets.alltrails.com/uploads/photo/image/21410847/extra_large_524c1fde20bec86f8eef72184cedfcd8.jpg'></img>
         </div>
     </div>
