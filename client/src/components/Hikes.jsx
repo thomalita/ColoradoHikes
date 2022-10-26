@@ -3,20 +3,10 @@ import axios from 'axios'
 
 
 
-const Hikes = () => {
 
-    const [hikes, setHikes] = useState([])
+const Hikes = ({hikes, getHikes}) => {
 
-    const getHikes = async () => {
-        const response = await axios.get('http://localhost:3001/hikes')
-        console.log(response.data)
-        const hikes = response.data
-        setHikes(hikes)
-    }
-
-    useEffect (() => {
-    getHikes()
-    }, [])
+  
 
 const handleDelete = async (id) => {
     await axios.delete(`http://localhost:3001/hikes/${id}`)
@@ -36,7 +26,7 @@ const handleDelete = async (id) => {
                         <h5>Difficulty: {hike.difficulty}</h5>
                         <h5>Miles: {hike.miles}</h5>
                         <h5>Details: {hike.details}</h5>
-                        <button onClick={() => handleDelete(hike._id)}>X</button>
+                        <button onClick={() => handleDelete(hike._id)}>Delete</button>
                     </div>
                 ))}
             </div>

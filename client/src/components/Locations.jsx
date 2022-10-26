@@ -1,35 +1,42 @@
 import { useState, useEffect } from "react";
 import axios from 'axios'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 
 const Locations = () => {
     const [locations, setLocations] = useState([])
+    let navigate = useNavigate()
+
+    const handleClick = (id) => {
+        navigate(`/locations/${id}`)
+    }
+
     useEffect (() => {
     const getLocations = async () => {
         const response = await axios.get('http://localhost:3001/locations')
-        // console.log(response.data)
-    const locations = response.data
-        setLocations(locations)
+    // const locations = response.data
+
+    console.log(locations)
+        setLocations(response.data)
     }
     getLocations()
     }, [])
 
 
 
-
     return (
         <div className="locations-grid">
-            <div>
-                <h2>Locations</h2>
-                {locations.map((location) =>(
-                    <Link to={`/location/${location._id}`}>
-                    <div className="location-card" key={location.id}>
-                        <h3>{location.city}</h3>
-                        <img src={location.image}></img>
-                    </div>
-                    </Link>
-                ))}
+        <div>
+            <h2>Locations</h2>
+             {locations.map((location) =>(
+                //   <Link to={`/location/${location._id}`}> 
+                    <div className="location-card" key={location._id} onClick={()=>handleClick(location._id)}>
+                    <h3>{location.city}</h3>
+                    <img src={location.image}></img>
+                </div>
+                // {/* </Link> */}
+             ))}
             </div>
         </div>
     )
