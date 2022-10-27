@@ -27,7 +27,7 @@ const LocationDetails = ({hikes}) => {
       <h3>Details</h3>
         {location?.map((hike) =>(
           <div key={location.id}>
-            <h3>Location: {location?.city}</h3>
+            <h3>Location: {hike?.city}</h3>
             <img src={hike.image}></img>
             <h5>Difficulty: {hike.difficulty}</h5>
             <h5>Miles: {hike.miles}</h5>

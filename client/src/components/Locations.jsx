@@ -23,12 +23,13 @@ const Locations = () => {
 
 
     return (
+        <body className="location-body">
         <div className="locations-grid">
         <div>
             <h2>Locations</h2>
              {locations.map((location) =>(
                 //   <Link to={`/location/${location._id}`}> 
-                    <div className="location-card" key={location._id} onClick={()=>handleClick(location._id)}>
+                    <div className="location-card" key={locations._id} onClick={()=>handleClick(location._id)}>
                     <h3>{location.city}</h3>
                     <img src={location.image}></img>
                 </div>
@@ -36,6 +37,7 @@ const Locations = () => {
              ))}
             </div>
         </div>
+        </body>
     )
 }
 
