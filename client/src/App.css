@@ -35,12 +35,15 @@
   justify-content: space-around;
 }
 
-.locations-grid img {
+.locations-grid img { 
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-around;
   width: 100%;
   height: 10em;
   object-fit: center;
   box-shadow: inset 0 0 1em rgb(0, 0, 0);
-}
+} 
 
 .hikes-grid {
   background-color: #4D8989;
