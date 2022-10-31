@@ -17,11 +17,11 @@ const handleDelete = async (id) => {
 
 
     return (
-        <div className="hikes-grid">
-            <div>
-            <h2>Trails</h2>
+        <div>
+            <h2 className="trails">Trails</h2>
+            <div className="hikes-grid">
                 {hikes.map((hike) =>(
-                    <div key={hike.id}>
+                    <div key={hike.id} className="hikes-card">
                         <h3>Location: {hike.location?.city}</h3>
                         <img src={hike.image}></img>
                         <h5>Difficulty: {hike.difficulty}</h5>
