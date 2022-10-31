@@ -24,8 +24,8 @@ const Locations = () => {
 
 return (
     <body className="location-body">
+        <h2>Locations</h2>
         <div className="locations-grid">
-            <h2>Locations</h2>
              {locations.map((location) =>(
                 <div className="location-card" key={locations._id} onClick={()=>handleClick(location._id)}>
                     <h3>{location.city}</h3>
