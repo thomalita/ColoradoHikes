@@ -2,7 +2,7 @@
 
 ## Date: 10/19/22
 ### By: Thomalita Burbank
-#### [GitHub](https://github.com/thomalita) | [Trello](https://trello.com/b/kScL36IN/denver-hikes)
+#### [Heroku](https://colorado-hikes.herokuapp.com/)[GitHub](https://github.com/thomalita/ColoradoHikes) | [Trello](https://trello.com/b/kScL36IN/denver-hikes)
 ***
 
 ### ***SCENIC HIKES***
