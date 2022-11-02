@@ -6,7 +6,7 @@ const Nav = () => {
             <h3>Colorado's Hiking Guide</h3>
             <div>
                 <ul>
-                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/api">Home</NavLink></li>
                 <li><NavLink to="/locations">Locations</NavLink></li>
                 <li><NavLink to="/hikes">Hiking Trails</NavLink></li>
                 <li><NavLink to="/form/:id">Add Hike</NavLink></li>

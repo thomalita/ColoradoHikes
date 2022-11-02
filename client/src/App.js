@@ -31,7 +31,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path = "/" element = { <Home/> } />
+          <Route path = "/api" element = { <Home/> } />
           <Route path = "/locations" element = { <Locations/> } />
           <Route path = "/locations/:id" element = { <LocationDetails hikes = {hikes}/> } />
           <Route path = "/hikes" element = { <Hikes hikes = {hikes} getHikes = {getHikes} /> } />

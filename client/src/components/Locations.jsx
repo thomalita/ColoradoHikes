@@ -9,12 +9,12 @@ const Locations = () => {
         let navigate = useNavigate()
 
         const handleClick = (id) => {
-            navigate(`/locations/${id}`)
+            navigate(`api/locations/${id}`)
     }
 
     useEffect (() => {
         const getLocations = async () => {
-            const response = await axios.get('/locations')
+            const response = await axios.get('api/locations')
                 setLocations(response.data)
     }
         getLocations()
