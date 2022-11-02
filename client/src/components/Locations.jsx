@@ -26,7 +26,7 @@ return (
     <body className="location-body">
         <h2 className="locations-title">Locations</h2>
         <div className="locations-grid">
-             {locations.map((location) =>(
+             {locations?.map((location) =>(
                 <div className="location-card" key={locations._id} onClick={()=>handleClick(location._id)}>
                     <h3>{location.city} </h3>
                     <img src={location.image}></img>
