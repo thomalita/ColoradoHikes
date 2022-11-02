@@ -21,7 +21,6 @@ const LocationDetails = ({hikes}) => {
 
 
 
-    //make axios get with ID use Params, setState
   return (
     <div className='location-details'>
       <h3>Details</h3>
