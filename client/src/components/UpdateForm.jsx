@@ -23,7 +23,7 @@ const UpdateForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await axios.put(`http://localhost:3001/hikes/${id}`, hike)
+        await axios.put(`/hikes/${id}`, hike)
         navigate('/')
     }
 
