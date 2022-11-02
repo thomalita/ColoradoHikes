@@ -32,11 +32,11 @@ function App() {
       <main>
         <Routes>
           <Route path = "/api" element = { <Home/> } />
-          <Route path = "/locations" element = { <Locations/> } />
-          <Route path = "/locations/:id" element = { <LocationDetails hikes = {hikes}/> } />
-          <Route path = "/hikes" element = { <Hikes hikes = {hikes} getHikes = {getHikes} /> } />
-          <Route path ="/form/:id" element={ <HikeForm/>} />
-          <Route path ="/hikes/:id/updateForm" element={ <UpdateForm/>}/>
+          <Route path = "/api/locations" element = { <Locations/> } />
+          <Route path = "/api/locations/:id" element = { <LocationDetails hikes = {hikes}/> } />
+          <Route path = "/api/hikes" element = { <Hikes hikes = {hikes} getHikes = {getHikes} /> } />
+          <Route path = "/api/form/:id" element={ <HikeForm/>} />
+          <Route path = "/api/hikes/:id/updateForm" element={ <UpdateForm/>}/>
         </Routes>
       </main>
     </div>

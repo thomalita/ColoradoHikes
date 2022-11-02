@@ -7,9 +7,9 @@ const Nav = () => {
             <div>
                 <ul>
                 <li><NavLink to="/api">Home</NavLink></li>
-                <li><NavLink to="/locations">Locations</NavLink></li>
-                <li><NavLink to="/hikes">Hiking Trails</NavLink></li>
-                <li><NavLink to="/form/:id">Add Hike</NavLink></li>
+                <li><NavLink to="/api/locations">Locations</NavLink></li>
+                <li><NavLink to="/api/hikes">Hiking Trails</NavLink></li>
+                <li><NavLink to="/api/form/:id">Add Hike</NavLink></li>
                 </ul>
             </div>
         </nav>
