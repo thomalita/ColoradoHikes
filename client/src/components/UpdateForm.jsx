@@ -12,7 +12,7 @@ const UpdateForm = () => {
     useEffect (() => {
         const getHikeById = async () => {
             try {
-                let res = await axios.get(`/api/hikes/${id}`)
+                let res = await axios.get(`/hikes/${id}`)
                 setHike(res.data)
             } catch (error) {
                 console.log(error)
@@ -23,7 +23,7 @@ const UpdateForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await axios.put(`/api/hikes/${id}`, hike)
+        await axios.put(`/hikes/${id}`, hike)
         navigate('/')
     }
 

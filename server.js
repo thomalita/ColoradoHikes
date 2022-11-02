@@ -16,7 +16,7 @@ app.use(cors())
 
 
 
-app.use('/api', routes);
+app.use('/', routes);
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 app.get('/*', (req, res) => {

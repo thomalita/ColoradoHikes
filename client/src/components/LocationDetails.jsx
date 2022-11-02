@@ -10,7 +10,7 @@ const LocationDetails = ({hikes}) => {
   const [location, setLocation] = useState([])
 
   const getLocation = async () => { 
-  const response = await axios.get(`/api/locations/${id}/hikes`)
+  const response = await axios.get(`/locations/${id}/hikes`)
     setLocation(response.data)
   }
     

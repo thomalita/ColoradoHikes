@@ -15,8 +15,8 @@ const HikeForm = () => {
 
     const handleSubmit = async (e) => {
       e.preventDefault()
-        const res = await axios.post('/api/hikes', newHike)
-        navigate('/api/hikes')
+        const res = await axios.post('/hikes', newHike)
+        navigate('/hikes')
     }
 
     const handleChange = (e) => {
