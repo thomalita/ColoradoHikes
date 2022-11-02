@@ -10,7 +10,7 @@ const Hikes = ({hikes, getHikes}) => {
   
 
 const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:3001/hikes/${id}`)
+    await axios.delete(`/hikes/${id}`)
     getHikes()
 }
 

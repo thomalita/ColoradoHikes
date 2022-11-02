@@ -12,7 +12,7 @@ const UpdateForm = () => {
     useEffect (() => {
         const getHikeById = async () => {
             try {
-                let res = await axios.get(`http://localhost:3001/hikes/${id}`)
+                let res = await axios.get(`/hikes/${id}`)
                 setHike(res.data)
             } catch (error) {
                 console.log(error)

@@ -15,7 +15,7 @@ function App() {
   const [hikes, setHikes] = useState([])
 
     const getHikes = async () => {
-        const response = await axios.get('http://localhost:3001/hikes')
+        const response = await axios.get('/hikes')
         const hikes = response.data
         setHikes(hikes)
     }
